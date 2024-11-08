@@ -1,0 +1,226 @@
+    :root {
+        --primary-color: #1A4B84;
+        --chathams_blue: #1A4B84;
+        --tamarillo: #991E14;
+        --yellow_sea: #FEAD06;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f4f4f4;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    /* NAVBAR STYLING STARTS */
+
+    .nav-links a {
+        color: #fff;
+    }
+
+    /* Header Styles
+    -------------------------------------------------- */
+
+    header .bg-gradient {
+        background: #d8d8d8cc;
+    }
+
+
+    header .navbar {
+        padding: 20px 0 0;
+    }
+
+    header .navbar-brand {
+        padding: 0;
+        z-index: 1;
+        width: 213px;
+        height: 109px;
+        background-color: var(--primary-color);
+    }
+
+    header .navbar-brand img {
+        width: 56px;
+    }
+
+    
+
+    header h3 {
+        color: #fff;
+    }
+
+    header h4 {
+       font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 0.36px;
+        color: #191919;
+        text-transform: uppercase;
+    }
+
+    header p {
+        font: 600 12px/15px Poppins;
+        letter-spacing: 0.24px;
+        color: #191919;
+    }
+
+    .JsTitle {
+        background-color: #838383;
+        height: 50px;
+        font: normal normal 600 19px/27px Oswald;
+        letter-spacing: 0.38px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .JsTitle img {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+
+    .link {
+        height: 10px;
+        margin-right: 4px;
+
+    }
+
+
+    /* Sticky footer styles
+    -------------------------------------------------- */
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        /* Margin bottom by footer height */
+        margin-bottom: 60px;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 60px;
+        line-height: 60px;
+        /* Vertically center the text there */
+        background-color: #f5f5f5;
+    }
+
+
+    
+    .footer-dark {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    footer {
+        font: normal normal 600 12px/19px Oswald;
+        letter-spacing: 0.24px;
+        color: #FFFFFF;
+    }
+
+    .theme-switch {
+        margin: 0 5px;
+        padding: 10px;
+        font-size: 0.5rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .theme-switch-chathams_blue {
+        background-color: var(--chathams_blue);
+    }
+
+    .theme-switch-chathams_blue:hover {
+    box-shadow: 2px 2px 2px var(--chathams_blue);
+    }
+
+    .theme-switch-tamarillo {
+        background-color: var(--tamarillo);
+    }
+
+    .theme-switch-tamarillo:hover {
+    box-shadow: 2px 2px 2px var(--tamarillo);
+    }
+
+    .theme-switch-yellow_sea {
+        background-color: var(--yellow_sea);
+    }
+
+    .theme-switch-yellow_sea:hover {
+    box-shadow: 2px 2px 2px var(--yellow_sea);
+    }
+
+    
+    input {
+        width: 100%;
+        padding: 20px;
+        background-color: #bdd0e696;
+    }
+    
+    .search-form {
+        max-width: 400px;
+        margin: 50px auto;
+    }
+    
+    input.search {
+        margin: 0;
+        text-align: center;
+        outline: 0;
+        border: 0;
+        border: 10px solid var(--primary-color);
+        width: 120%;
+        left: -10%;
+        position: relative;
+        top: 10px;
+        z-index: 2;
+        border-radius: 50px;
+        font-size: 40px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+    }
+    
+    .suggestions {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    
+    .suggestions li {
+        background: white;
+        list-style: none;
+        border: 1px solid var(--primary-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+        margin: 0;
+        padding: 20px;
+        transition: "background" 0.2s;
+        display: flex;
+        justify-content: space-between;
+        text-transform: capitalize;
+    }
+    
+    .suggestions li:nth-child(even) {
+        transform: perspective(100px) rotateX(2deg) translateY(2px);
+        background-color: #1a4c8463;
+    }
+    .suggestions li:nth-child(odd) {
+        transform: perspective(100px) rotateX(-2deg) translateY(3px);
+        background-color: #1a4c841c;
+    }
+    
+    .hl {
+        background: var(--primary-color);
+        color: white;
+    }
+    
+    header .navbar-brand {
+        height: 150px;
+    }
